@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+
+:root {
+/* se definen  varios colores */
+/* color de fondo de pagina */
+--bgcolor-page: #eddcc1;
+
+/* color de fondo de barra navegacion */
+--bgcolor-1:#fff;
+
+/* color de fondo panel servicios */
+--bgcolor-2:#20272e;
+
+/* color de fondo verde 1 */
+--color-1: #328532;
+
+/* color de fondo verde 2 */
+--color-2: #66e566;
+
+/* colores del texto */
+--text-color-1: #000;
+--text-color-2: #616161;
+--text-color-3: #fff;
+
+}
+
+
+
+body {
+  margin:0;
+  font-family: "Poppins", sans-serif;
+  background-color:var(--bgcolor-page);
+  color : var(--text-color-1);
+
+}
+
+a {
+  color : var(--text-color-1);
+  text-decoration: none;
+}
+
+a.actual {
+  font-weight: bold;
+}
+
+header {
+  background-color: var(--bgcolor-1);
+  padding: 0;
+}
+
+header  h1 {
+  font-size: 1.2em;
+  margin-top:0;
+}
+
+header  h1 > a {
+  word-spacing: -0.2em;
+}
+
+header   h1 > a > span {
+  color : var(--color-1);
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+  display: flex;
+  place-content: space-between;
+}
+
+header div.contenedor {
+  padding: 1em 1em;
+  display: flex;
+  place-content: space-between;
+
+}
+
+div.contenedor {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+header a {
+  padding: 0 1em;
+}
+
+.boton {
+  background-color: var(--bgcolor-1);
+  color:var(--color-1);
+  border: 3px solid var(--color-1);
+  border-radius: 5em;
+  font-weight: bold;
+  padding: 0.2em 0.8em;
+}
+
+.boton:hover {
+  color: var(--bgcolor-1);
+  background-color:var(--color-1);
+
+}
+
+.boton:active {
+  background-color: aqua;
+  color:var(--text-color-1);
+
+}
+
+/* vamos con lo responsive */
+
+@media only screen and (max-width: 1200px)
+{
+  header div.contenedor {
+    padding: 1 0.2em;
+  }
+  header a {
+    padding: 0 0.5em;
+  }
+  
+}
+
