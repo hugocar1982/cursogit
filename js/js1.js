@@ -1,2 +1,1 @@
-// no me gusto
-// es cpocigo
+texto solo en main
